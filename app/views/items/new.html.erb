@@ -1,3 +1,11 @@
 <div class="style-box col-10 offset-1">
   <h1>Enter Your Item Details</h1>
+  <%= simple_form_for @item do |f| %>
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :owner %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+
+  <% end %>
 </div>
